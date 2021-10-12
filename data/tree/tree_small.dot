@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="temp_1 <= 66.5\nsquared_error = 150.8\nsamples = 172\nvalue = 62.0"] ;
+1 [label="average <= 49.2\nsquared_error = 68.0\nsamples = 108\nvalue = 55.0"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="temp_1 <= 46.5\nsquared_error = 34.0\nsamples = 40\nvalue = 46.8"] ;
+1 -> 2 ;
+3 [label="squared_error = 9.8\nsamples = 15\nvalue = 41.2"] ;
+2 -> 3 ;
+4 [label="squared_error = 15.8\nsamples = 25\nvalue = 50.5"] ;
+2 -> 4 ;
+5 [label="average <= 64.9\nsquared_error = 26.1\nsamples = 68\nvalue = 59.8"] ;
+1 -> 5 ;
+6 [label="squared_error = 18.7\nsamples = 60\nvalue = 58.5"] ;
+5 -> 6 ;
+7 [label="squared_error = 7.0\nsamples = 8\nvalue = 66.9"] ;
+5 -> 7 ;
+8 [label="temp_1 <= 76.5\nsquared_error = 50.9\nsamples = 64\nvalue = 74.7"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="average <= 70.5\nsquared_error = 27.8\nsamples = 44\nvalue = 72.0"] ;
+8 -> 9 ;
+10 [label="squared_error = 29.7\nsamples = 18\nvalue = 68.7"] ;
+9 -> 10 ;
+11 [label="squared_error = 11.4\nsamples = 26\nvalue = 74.5"] ;
+9 -> 11 ;
+12 [label="week_Wed <= 0.5\nsquared_error = 50.4\nsamples = 20\nvalue = 80.6"] ;
+8 -> 12 ;
+13 [label="squared_error = 31.1\nsamples = 15\nvalue = 83.5"] ;
+12 -> 13 ;
+14 [label="squared_error = 27.4\nsamples = 5\nvalue = 73.6"] ;
+12 -> 14 ;
+}
